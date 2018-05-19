@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "firstName": "TESTE2",
+      "age": 20,
+      "companyId": "2"
+    },
+    {
+      "id": "3",
+      "firstName": "Daniel",
+      "age": 20,
+      "companyId": "2"
+    },
+    {
+      "firstName": "Stephen",
+      "age": 20,
+      "id": "uDazVrS"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Google",
+      "description": "Search"
+    },
+    {
+      "id": "2",
+      "name": "Facebook",
+      "description": "Social"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+query findCompany {
+  company(id: "1") {
+    users {
+      id
+    }
+  }
+
+  company(id: "2") {
+    users {
+      id
+    }
+  }
+}
+
+---
+
+{
+  google: company(id: "1") {
+    id,
+    users {
+      id
+    }
+  }
+  apple: company(id: "2") {
+    id
+  }
+}
+
+--
+
+query fragment:
+
+fragment companyDetails on Company {
+  id,
+  name,
+  description
+}
+
+query
+{
+  google: company(id: "1") {
+    ...companyDetails
+  }
+  apple: company(id: "2") {
+    id
+  }
+}
+
+----
+// lecture 26
+mutation {
+  addUser(firstName: "Stephen", age:20) {
+    firstName,
+    age,
+    id
+  }
+}
